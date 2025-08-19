@@ -1,0 +1,74 @@
+.project__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project__item {
+  background: var(--color-bg-variant);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.project__item:hover {
+  border-color: var(--primary-variant);
+  background: transparent;
+}
+
+.project__item-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.project__item h3 {
+  margin: 1.2rem 0 0.2rem;
+}
+
+.project__item p {
+  margin: 0 0 0.5rem;
+  font-size: medium;
+  line-height: 1.2rem;
+}
+
+.project__item-tech {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  line-height: 0.8rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.project__item-tech li {
+  background-color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: var(--color-bg-variant);
+  font-size: small;
+  font-weight: bolder;
+}
+
+.project__item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ==========MEDIA QUERIES (Tablets)===========*/
+@media screen and (max-width: 1024px) {
+  .project__container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+/* ==========MEDIA QUERIES (Mobiles)===========*/
+@media screen and (max-width: 600px) {
+  .project__container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
