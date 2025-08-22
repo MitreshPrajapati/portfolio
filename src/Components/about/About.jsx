@@ -3,7 +3,7 @@ import { FaAward } from "react-icons/fa";
 import "./about.css";
 import ME from "../../assets/profile.jpg";
 
-export const AboutMe = () => {
+const AboutMe = () => {
   return (
     <section id="about">
       <h5>Get to Know</h5>
@@ -56,3 +56,5 @@ export const AboutMe = () => {
     </section>
   );
 };
+
+export default AboutMe;
